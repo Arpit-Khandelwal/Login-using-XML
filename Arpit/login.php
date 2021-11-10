@@ -44,9 +44,10 @@ $user=$pass=$msg='';
   <input type="submit" name="" value="login">
   <div class="center">
                 
-    <p>Dont have an account?
+    <p>
+        Dont have an account?
     <a href="register.php">Create here</a>
-</p>
+    </p>
 </div>
 </form>
 

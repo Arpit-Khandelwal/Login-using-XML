@@ -56,13 +56,10 @@ $error='';
             <input type="number" name="phone" id="mobile"> -->
 
             <input type="submit" name="" value="Login">
-
-        </form>
-
-        <div >
+           
             <p>Already have an account?
             <a href="login.php">Login here</a></p>
-        </div>
+        </form>
 
     </div>
     
