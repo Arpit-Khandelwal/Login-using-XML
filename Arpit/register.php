@@ -40,19 +40,20 @@ $error='';
     <div class="container">
         
         <form class="box" action="login.php" method="post" >
+            
             <input placeholder= "Name" type="text" id="first_name" name="name">
             
-                <input placeholder="Email" type="email" id="email" name="user_email">
-            
-                <input placeholder="Username" type="text" name="user" id="user">
-            
-                <input placeholder="Password" type="password" name="pass" id="password">
-            
-                <input placeholder="Confirm Password" type="password" name="c_password" id="c_password">
-            
-                <!-- <input placeholder="DOB" type="date" name="dob" id="dob">
-            
-                <input type="number" name="phone" id="mobile"> -->
+            <input placeholder="Email" type="email" id="email" name="user_email">
+        
+            <input placeholder="Username" type="text" name="user" id="user">
+        
+            <input placeholder="Password" type="password" name="pass" id="password">
+        
+            <input placeholder="Confirm Password" type="password" name="c_password" id="c_password">
+        
+            <!-- <input placeholder="DOB" type="date" name="dob" id="dob">
+        
+            <input type="number" name="phone" id="mobile"> -->
 
             <input type="submit" name="" value="Login">
 

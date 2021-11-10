@@ -45,7 +45,8 @@ $user=$pass=$msg='';
   <div class="center">
                 
     <p>Dont have an account?
-    <a href="register.php">Create here</a></p>
+    <a href="register.php">Create here</a>
+</p>
 </div>
 </form>
 

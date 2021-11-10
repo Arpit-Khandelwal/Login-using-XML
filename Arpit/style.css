@@ -35,6 +35,14 @@ body {
   font-weight: 500;
 }
 
+p{
+    color: white;
+
+  text-transform: uppercase;
+
+  font-weight: 500; 
+}
+
 .box input[type="text"],
 .box input[type="password"],
 .box input[type="email"]{
