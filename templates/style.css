@@ -1,0 +1,26 @@
+.greenbg{
+    background-color: #00ffad;
+}
+h4{
+    background-color:black;
+    padding:10px;
+}
+form {
+    max-width: 800px;
+    margin: 100px;
+    margin-bottom: 0px;
+    padding: 20px;
+    margin-top:5rem
+}
+.blbox {
+    padding-bottom: 1.5rem;
+}
+label {
+    font-size:18px; color:black;
+}
+.rd{
+    color:red;
+}
+.dp{
+    border-radius: 50%;
+}
