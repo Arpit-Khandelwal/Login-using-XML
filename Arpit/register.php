@@ -2,23 +2,24 @@
 $error='';
     if(isset($_POST['submit'])){
         
+       
         $user=$_POST['user'];
         $email=$_POST['email'];
         $name=$_POST['name'];
         $pass=$_POST['pass'];
         $cpass=$_POST['c_password'];
+        $dob=$_POST['dob'];
 
         if($user=='' || $email =='' || $name=='' ||$pass=='' ||$dob=='')$error='All Fields are required <br>';
-        else if(file_exists($user.'.xml'))$error='User already exists';
+        else if(file_exists('.xml'))$error='User already exists';
         else if($pass!=$cpass)$error='Passwords dont match';
         else{
             $xml = new SimpleXMLElement("<user></user>");
             $xml->addChild('pass',$pass);
             $xml->addChild('email',$email);
-            $xml->addChild('mobile',$phone);
             $xml->addChild('date',$dob);
             $xml->addChild('name',$name);
-
+            $xml->addChild('username',$user);
             $xml->asXML($user.'.xml');
             session_start();
             $_SESSION['user']=$user;
@@ -39,11 +40,11 @@ $error='';
 <body>
     <div class="container">
         
-        <form class="box" action="login.php" method="post" >
+        <form class="box" method="post" >
             
             <input placeholder= "Name" type="text" id="first_name" name="name">
             
-            <input placeholder="Email" type="email" id="email" name="user_email">
+            <input placeholder="Email" type="email" id="email" name="email">
         
             <input placeholder="Username" type="text" name="user" id="user">
         
@@ -51,11 +52,9 @@ $error='';
         
             <input placeholder="Confirm Password" type="password" name="c_password" id="c_password">
         
-            <!-- <input placeholder="DOB" type="date" name="dob" id="dob">
-        
-            <input type="number" name="phone" id="mobile"> -->
+            <input placeholder="DD/MM/YY" type="text" name="dob" id="dob">
 
-            <input type="submit" name="" value="Login">
+            <input type="submit" name="submit" >
            
             <p>Already have an account?
             <a href="login.php">Login here</a></p>
