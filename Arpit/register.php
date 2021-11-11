@@ -38,9 +38,9 @@ $error='';
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div class="container">
-        
-        <form class="box" method="post" >
+    <div class="box">
+        <h1>Registration</h1>
+        <form  method="post" >
             
             <input placeholder= "Name" type="text" id="first_name" name="name">
             

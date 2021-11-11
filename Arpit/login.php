@@ -8,14 +8,13 @@ $user=$pass=$msg='';
             if($pass==$xml->pass){
                 session_start();
                 $_SESSION['user']=$user;
-                header('Location: home.php');
+                header('Location: feed.php');
             }
             else $msg="incorrect details";
         }
         else $msg="incorrect details";
     }
 ?>
-
 
 <!DOCTYPE html>
 
