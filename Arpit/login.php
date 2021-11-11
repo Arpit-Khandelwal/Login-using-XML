@@ -15,7 +15,7 @@ $user=$pass=$msg='';
         else $msg="incorrect details";
     }
 ?>
-
+  
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
